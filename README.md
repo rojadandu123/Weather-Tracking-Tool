@@ -136,12 +136,9 @@ mvn spring-boot:run
 ```
 
 ---
-# 🌦 Weather Tracking Tool
+## Dashboard Preview
 
-<p align="center">
-  <img src="<img width="1916" height="865" alt="image" src="https://github.com/user-attachments/assets/cf2255c0-bbb8-47c8-9d41-535f80e7864b" />
-" alt="Weather Dashboard" width="900">
-</p>
+![Weather Dashboard](<img width="1916" height="865" alt="image" src="https://github.com/user-attachments/assets/c5f833e6-c593-489a-a6bf-2ab70d617780" />)
 
 ## 🌐 Access the Application
 
