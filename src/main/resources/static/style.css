@@ -1,0 +1,482 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================
+   GLOBAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #0f172a
+    );
+    color:white;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.navbar h2{
+    font-size:1.8rem;
+    font-weight:600;
+}
+
+.theme-btn{
+    border:none;
+    padding:10px 18px;
+    border-radius:12px;
+    cursor:pointer;
+    background:#38bdf8;
+    color:#fff;
+    font-weight:600;
+    transition:.3s;
+}
+
+.theme-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+.search-box{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.search-box input{
+    width:350px;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+
+    background:rgba(255,255,255,.1);
+
+    backdrop-filter:blur(10px);
+
+    color:white;
+}
+
+.search-box input::placeholder{
+    color:#ddd;
+}
+
+.search-box button{
+    padding:14px 24px;
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+    font-weight:600;
+
+    background:#38bdf8;
+    color:white;
+
+    transition:.3s;
+}
+
+.search-box button:hover{
+    transform:translateY(-4px);
+}
+
+/* ==========================
+   STATS CARDS
+========================== */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    padding:40px 8%;
+}
+
+.stat-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    padding:30px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    transition:.4s;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.4);
+}
+
+.stat-card i{
+    font-size:2rem;
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.stat-card h3{
+    font-size:1.8rem;
+    margin-bottom:10px;
+}
+
+/* ==========================
+   CITY SECTION
+========================== */
+
+.city-section{
+    padding:50px 8%;
+}
+
+.city-section h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.city-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+}
+
+.city-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+.city-card:hover{
+    transform:translateY(-8px);
+
+    background:rgba(56,189,248,.15);
+}
+
+/* ==========================
+   FORECAST SECTION
+========================== */
+
+.forecast{
+    padding:50px 8%;
+}
+
+.forecast h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.forecast-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.forecast-card{
+
+    width:140px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    padding:20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.4s;
+}
+
+.forecast-card:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================
+   AQI SECTION
+========================== */
+
+.aqi-section{
+    padding:50px 8%;
+}
+
+.aqi-section h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.aqi-grid{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.aqi-card{
+
+    min-width:250px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    transition:.4s;
+}
+
+.green{
+    background:#22c55e;
+}
+
+.yellow{
+    background:#eab308;
+}
+
+.red{
+    background:#ef4444;
+}
+
+.aqi-card:hover{
+    transform:translateY(-8px);
+}
+
+/* ==========================
+   CHART SECTION
+========================== */
+
+.chart-section{
+    padding:50px 8%;
+}
+
+.chart-section h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.chart-section canvas{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:20px;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    margin-top:50px;
+
+    padding:30px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(10px);
+}
+
+footer p{
+    color:#cbd5e1;
+}
+
+/* ==========================
+   ANIMATIONS
+========================== */
+
+.hero{
+    animation:fadeIn 1s ease;
+}
+
+.stats{
+    animation:slideUp 1.2s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes slideUp{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#38bdf8;
+    border-radius:10px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .search-box input{
+        width:100%;
+    }
+
+    .forecast-card{
+        width:100%;
+    }
+
+    .aqi-card{
+        width:100%;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+}.database-section{
+    padding:50px 8%;
+}
+
+.database-section h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.database-section table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    color:black;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.database-section th{
+    background:#38bdf8;
+    color:white;
+    padding:15px;
+}
+
+.database-section td{
+    padding:12px;
+    border:1px solid #ddd;
+}
+.database-section{
+    padding:50px 8%;
+}
+
+.database-section h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.database-section table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    color:black;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.database-section th{
+    background:#38bdf8;
+    color:white;
+    padding:15px;
+}
+
+.database-section td{
+    padding:12px;
+    border:1px solid #ddd;
+}

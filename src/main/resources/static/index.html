@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>India Weather Analytics Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2>🌦 India Weather Dashboard</h2>
+
+    <button class="theme-btn">
+        🌙 Dark Mode
+    </button>
+</nav>
+
+<section class="hero">
+
+    <h1>Real-Time Weather Monitoring Across India</h1>
+
+    <p>
+        Track weather, forecasts, AQI and analytics for Indian cities.
+    </p>
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="cityInput"
+        placeholder="Search City">
+
+        <button onclick="getWeather()">
+            Search
+        </button>
+
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <div class="stat-card">
+        <i class="fas fa-temperature-high"></i>
+        <h3 id="temp">--°C</h3>
+        <p>Temperature</p>
+    </div>
+
+    <div class="stat-card">
+        <i class="fas fa-tint"></i>
+        <h3 id="humidity">--%</h3>
+        <p>Humidity</p>
+    </div>
+
+    <div class="stat-card">
+        <i class="fas fa-wind"></i>
+        <h3 id="wind">-- km/h</h3>
+        <p>Wind Speed</p>
+    </div>
+
+    <div class="stat-card">
+        <i class="fas fa-cloud-sun"></i>
+        <h3 id="condition">--</h3>
+        <p>Condition</p>
+    </div>
+
+</section>
+
+<section class="city-section">
+
+    <h2>Major Indian Cities</h2>
+
+    <div class="city-grid">
+
+        <div class="city-card">Delhi</div>
+        <div class="city-card">Mumbai</div>
+        <div class="city-card">Hyderabad</div>
+        <div class="city-card">Chennai</div>
+        <div class="city-card">Bengaluru</div>
+        <div class="city-card">Kolkata</div>
+        <div class="city-card">Pune</div>
+        <div class="city-card">Ahmedabad</div>
+
+    </div>
+
+</section>
+
+<section class="forecast">
+
+    <h2>5-Day Forecast</h2>
+
+    <div class="forecast-container">
+
+        <div class="forecast-card">
+            <h4>Mon</h4>
+            <p>32°C</p>
+        </div>
+
+        <div class="forecast-card">
+            <h4>Tue</h4>
+            <p>31°C</p>
+        </div>
+
+        <div class="forecast-card">
+            <h4>Wed</h4>
+            <p>29°C</p>
+        </div>
+
+        <div class="forecast-card">
+            <h4>Thu</h4>
+            <p>30°C</p>
+        </div>
+
+        <div class="forecast-card">
+            <h4>Fri</h4>
+            <p>33°C</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="aqi-section">
+ <section class="database-section">
+
+    <h2>Stored Weather Records</h2>
+
+    <div id="weatherTable"></div>
+
+</section>
+
+<section class="aqi-section">
+
+    <h2>Air Quality Index</h2>
+
+    <div class="aqi-grid">
+
+        <div class="aqi-card green">
+            Hyderabad AQI : 45
+        </div>
+
+        <div class="aqi-card yellow">
+            Mumbai AQI : 85
+        </div>
+
+        <div class="aqi-card red">
+            Delhi AQI : 220
+        </div>
+
+    </div>
+
+</section>
+
+<section class="chart-section">
+
+    <h2>Temperature Trend</h2>
+
+    <canvas id="weatherChart"></canvas>
+
+</section>
+
+<footer>
+
+    <h3>India Weather Monitoring System</h3>
+
+    <p>
+        Built with HTML, CSS, JavaScript & Weather APIs
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
