@@ -2,7 +2,7 @@
 // API CONFIG
 // =========================
 
-const apiKey = "7ed7579773e84ce29d5104346260606";
+const apiKey = "YOUR_API_KEY";
 
 // =========================
 // CHART
